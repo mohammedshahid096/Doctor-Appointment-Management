@@ -1,0 +1,18 @@
+.UsersListWrapper {
+  width: 96%;
+  min-height: 87vh;
+  margin: 1rem auto;
+  background-color: #ffff;
+  border: 1.52px solid #e6dede;
+  border-radius: 3px;
+  box-shadow: 10px 10px 7px -4px rgba(245, 237, 245, 0.55);
+  overflow: auto;
+}
+.UsersListWrapper h1 {
+  text-align: center;
+  margin-top: 12px;
+}
+.MuiDataGrid-columnHeader {
+  background-color: skyblue;
+  color: white;
+}

@@ -1,0 +1,61 @@
+.bookingWrapper {
+  width: 96%;
+  min-height: 87vh;
+  margin: 1rem auto;
+  overflow: auto;
+}
+.bookingWrapper header h1 {
+  text-align: center;
+  margin-top: 5px;
+  font-size: x-large;
+}
+.bookingWrapper .divisions {
+  display: flex;
+  gap: 1.5rem;
+}
+.bookingWrapper .divisions > div {
+  background-color: #ffff;
+  border: 1.52px solid #e6dede;
+  border-radius: 3px;
+  box-shadow: 10px 10px 7px -4px rgba(245, 237, 245, 0.55);
+  height: 100%;
+}
+.AppointmentDiv {
+  width: 60%;
+}
+.DoctorDetailsDiv {
+  width: 40%;
+}
+.AppointmentDiv input[type="time"] {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  font-size: large;
+  padding: 8.5px 14px;
+}
+.DoctorDetailsDiv .details {
+  margin-bottom: 1rem;
+}
+.DoctorDetailsDiv .details > div {
+  margin-top: 0.8rem;
+  padding-left: 1rem;
+  color: #0007cd;
+}
+.DoctorDetailsDiv .details > div b {
+  color: black;
+}
+.DoctorDetailsDiv .imageIcon {
+  font-size: 6rem;
+  color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  .bookingWrapper .divisions {
+    flex-direction: column-reverse;
+  }
+  .AppointmentDiv {
+    width: 100%;
+  }
+  .DoctorDetailsDiv {
+    width: 100%;
+  }
+}
