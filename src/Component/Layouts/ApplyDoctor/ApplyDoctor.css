@@ -1,0 +1,60 @@
+.ApplyDoctorWrapper {
+  width: 96%;
+  min-height: 90vh;
+  margin: 1rem auto;
+  /* padding: 10px; */
+  background-color: #ffff;
+  border: 1.52px solid #e6dede;
+  border-radius: 3px;
+  -webkit-box-shadow: 10px 10px 7px -4px rgba(245, 237, 245, 0.55);
+  -moz-box-shadow: 10px 10px 7px -4px rgba(245, 237, 245, 0.55);
+  box-shadow: 10px 10px 7px -4px rgba(245, 237, 245, 0.55);
+}
+.ApplyDoctorWrapper header h1 {
+  text-align: center;
+  margin-top: 5px;
+}
+.applydcotorform .applyrows {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 3%;
+  justify-content: center;
+}
+.applydcotorform .applyrows > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.applydcotorform .applyrows > div label {
+  margin-bottom: 0.5rem;
+}
+.timepicker input[type="time"] {
+  border: 1px solid rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  font-size: large;
+  padding: 8.5px 14px;
+}
+.submitapply {
+  display: flex;
+  justify-content: right;
+}
+
+@media screen and (max-width: 1000px) {
+  .applydcotorform .applyrows {
+    grid-template-columns: 45% 45%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ApplyDoctorWrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .applydcotorform .applyrows {
+    display: flex;
+    flex-direction: column;
+  }
+  .submitapply {
+    justify-content: center;
+  }
+}

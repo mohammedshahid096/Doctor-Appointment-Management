@@ -1,0 +1,74 @@
+.notificationMain {
+  width: 96%;
+  min-height: 86vh;
+  margin: 1rem auto;
+  background-color: #ffff;
+  border: 1.52px solid #e6dede;
+  border-radius: 3px;
+  box-shadow: 10px 10px 7px -4px rgba(245, 237, 245, 0.55);
+  overflow: auto;
+}
+.notificationMain header h1 {
+  text-align: center;
+  margin-top: 5px;
+}
+.notificationMain nav {
+  height: 3rem;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-weight: 800;
+  align-items: center;
+  padding: 0px;
+  border-bottom: 1.5px solid rgba(165, 163, 163, 0.709);
+  border-top: 1.5px solid rgba(165, 163, 163, 0.709);
+}
+.notificationMain nav div {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transition: all 0.5s;
+}
+.notificationMain nav > div {
+  border-right: 1.5px solid gray;
+  cursor: pointer;
+}
+.notiactiveclass {
+  color: #13f38a;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.75);
+}
+.changeWrapper {
+  padding: 1rem 1.5rem;
+}
+.changeWrapper p {
+  text-align: right;
+  color: darkturquoise;
+  cursor: pointer;
+}
+.unreadClass {
+  padding-bottom: 10px;
+  margin-top: 0.5rem;
+  border-bottom: 1.5px solid rgba(165, 163, 163, 0.709);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.unreadClass > div:first-child {
+  font-size: x-large;
+}
+.unreadClass > div:last-child {
+  font-size: 1rem;
+}
+.unreadClass > div:last-child small {
+  color: #829199;
+}
+.nonotification {
+  font-size: 2rem;
+  color: tomato;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
